@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+.optimizationWrapper {
+  h2 {
+    margin-top: 2rem;
+  }
+}
+.itemsMapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}

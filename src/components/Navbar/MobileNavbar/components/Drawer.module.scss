@@ -1,0 +1,66 @@
+@import "../../../../styles/variables";
+
+.drawer {
+  display: none;
+  position: unset;
+  z-index: 1000;
+  background-color: $primary;
+  &_content {
+    height: 100%;
+    padding: 2rem;
+    &_header {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &_links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.closeIcon {
+  width: 30px;
+}
+
+.activeLink {
+  text-decoration: none;
+  color: $black;
+  border-bottom-style: solid;
+  border-bottom-color: $black;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.inactiveLink {
+  text-decoration: none;
+  color: $grey-text;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.registerButton {
+  background-color: $white;
+  color: $grey-text;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  border: 1px solid $primary;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}

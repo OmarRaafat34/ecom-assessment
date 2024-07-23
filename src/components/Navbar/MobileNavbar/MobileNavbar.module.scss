@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.mobileNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  transition: all 0.3s;
+  width: 100%;
+}
+.burgerIcon {
+  width: 40px;
+}
+
+@media (min-width: 1025px) {
+  .mobileNavbar {
+    display: none;
+  }
+}

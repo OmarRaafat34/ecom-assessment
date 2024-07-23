@@ -1,0 +1,95 @@
+@import "../../../styles/variables";
+.desktopNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.3s;
+  width: 100%;
+  &_notTop {
+    background-color: $white;
+    transition: all 0.3s;
+  }
+
+  &_leftSide {
+    width: 20%;
+  }
+  &_rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    width: 70%;
+  }
+}
+.mainLogo {
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+}
+.activeLink {
+  text-decoration: none;
+  color: $primary;
+  border-bottom-style: solid;
+  border-bottom-color: $primary;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
+}
+.inactiveLink {
+  text-decoration: none;
+  color: $grey-text;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  &:hover {
+    color: $primary;
+    border-bottom-style: solid;
+    border-bottom-color: $primary;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktopNavbar {
+    display: none;
+  }
+}
+@media (max-width: 1448px) {
+  .activeLink {
+    font-size: 1rem;
+  }
+  .inactiveLink {
+    font-size: 1rem;
+  }
+  .desktopNavbar {
+    &_rightSide {
+      gap: 3%;
+    }
+  }
+}
+
+.registerButton {
+  background-color: $white;
+  color: $grey-text;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  border: 1px solid $primary;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    border: 1px solid $primary;
+    transition: 0.3s ease-in-out;
+  }
+}

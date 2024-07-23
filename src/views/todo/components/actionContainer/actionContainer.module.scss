@@ -1,0 +1,90 @@
+@import "../../../../styles/variables";
+
+.tableActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  &_rightside {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.actionWrapper {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.actionContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.filterContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid $primary;
+  padding: 0rem 0.8rem;
+  border-radius: 0.5rem;
+  color: $primary;
+  gap: 0.2rem;
+}
+.actionButton {
+  background-color: $primary;
+  color: $white;
+  font-size: 1rem;
+  border: 1px solid $primary;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: 0.3s ease-in-out;
+  }
+}
+.actionButtonCancel {
+  background-color: $white !important;
+  color: $red;
+  font-size: 1rem;
+  border: 1px solid $red;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+  &:hover {
+    background-color: $red !important;
+    color: $white !important;
+    border: 1px solid $red;
+    transition: 0.3s ease-in-out;
+  }
+}
+.iconImage {
+  height: 30px;
+  cursor: pointer;
+}
+.submenuWrapper {
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: $white;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  position: absolute;
+  top: 15rem;
+  right: 1rem;
+  margin-top: 0.2rem;
+  &_item {
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $grey-100;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
